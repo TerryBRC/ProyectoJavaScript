@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Java</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+</head>
+<body>
+    <form id="informacion" action="index.html">
+    <div class="datos">
+        Titulo: <input type="text" name="txtTitulo" id="txtTitulo" required>
+    </div>
+        <br>
+        <br>
+        <div class="datos">
+        Descripcion: 
+        <br>
+        <textarea name="txtAreaDescripcion" id="txtAreaDescripcion" required>
+        </textarea>
+        </div>
+        <br>
+        <br>
+        <div class="datos">
+        Tipo: <select name="sTipos" id="sTipos" required>
+            <option value="Tipo 1">Tipo 1</option>
+            <option value="Tipo 2">Tipo 2</option>
+            <option value="Tipo 3">Tipo 3</option>
+        </select>
+    </div>
+        <br>
+        <br>
+        <div class="button">
+        <button>Agregar</button>
+    </div>
+</form>
+
+<script src="CODE.js">
+</script>
+
+<style>
+    * {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+    #informacion{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: aquamarine;
+        text-align: center;
+        padding: 5%;
+        margin-top: 3%;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: solid 1px;
+    }
+    .table{
+        text-align: center;
+        border: solid 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+    <br>
+    <div class="container">
+        <div class="row">
+            <table border = 1 class="table" id="registros">
+                <thead class="thead_titulos">
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Tipo</th>
+                    <th>Edición</th>
+                </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+</body>
+</html>
